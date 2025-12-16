@@ -243,7 +243,7 @@ void setup() {
 
   // Set RTC to compile time on every boot (your PC's local time, i.e. Nepal)
   Serial.println("[RTC] Setting RTC to compile time (Nepal local).");
-  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));//eakchoti chalauda panui pugni function rtc bigreko xaina vane
   Serial.print("[RTC] Current RTC time: ");
   Serial.println(getRTCTimeString());
 
